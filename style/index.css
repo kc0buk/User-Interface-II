@@ -107,7 +107,7 @@ nav.navigation {
     text-align: center;
     text-decoration: none;
     background-color: #B5B5B5;
-    color: whitesmoke;
+    color: white;
     font-weight: 400;
     border-radius: 7px;
     padding: 1%;
@@ -177,6 +177,7 @@ nav.navigation {
 
 .itemDescription {
     text-align: center;
+    margin: 4%;
 }
 
 /* Footer Styling */
@@ -189,4 +190,29 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.footerContainer {
+    width: 80%;
+}
+
+.footerContainer h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: whitesmoke;
+    margin: 4%;
+}
+
+.footerContainer a {
+    width: 20%;
+    border: 2px solid #B5B5B5;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #696969;
+    font-weight: 400;
+    border-radius: 7px;
+    padding: 1%;
+    margin: .25%;
 }
