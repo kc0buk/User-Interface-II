@@ -73,7 +73,6 @@ body {
 .pageContainer {
     width: 100%;
     margin: 0 auto;
-    /* margin-top: 2%; */
 }
 
 /* Logo Styling */
@@ -81,7 +80,6 @@ body {
 .pageHeader {
     width: 100%;
     display: flex;
-    /* justify-content: space-evenly; */
 }
 
 .logo {
@@ -112,7 +110,20 @@ nav.navigation {
     border-radius: 7px;
     padding: 1%;
     margin: .25%;
-    /* margin-right: 0; */
+}
+
+@keyframes navAnimation {
+    from {background-color: #B5B5B5;}
+    to {background-color: #696969;}
+  }
+
+.navigation a:hover {
+    color: #white;
+    background-color: #696969;
+    border: 2px solid #B5B5B5;
+    border-radius: 7px;
+    animation: navAnimation 500ms linear 0s 1 alternate;
+    font-variant: small-caps;
 }
 
 /* Main Image Styling */
