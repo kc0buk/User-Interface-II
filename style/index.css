@@ -118,7 +118,7 @@ nav.navigation {
   }
 
 .navigation a:hover {
-    color: #white;
+    color: white;
     background-color: #696969;
     border: 2px solid #B5B5B5;
     border-radius: 7px;
@@ -131,11 +131,11 @@ nav.navigation {
 .mainImageContainer {
     height: 80vh;
     width: 100%;
-    background-image:url('https://picsum.photos/id/14/800/400?grayscale');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+    background-image: url('https://picsum.photos/id/14/800/400?grayscale');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,12 +143,20 @@ nav.navigation {
 }
 
 .mainImageContainer h1 {
+    width: 100%;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 9rem;
     color: whitesmoke;
     line-height: 5rem;
     margin: 4%;
+    
+}
+
+@media (max-width: 500px) {
+    .mainImageContainer h1 {
+        font-size: 4rem;
+    }
 }
 
 .mainImageContainer h3 {
