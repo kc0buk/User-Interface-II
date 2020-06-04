@@ -54,7 +54,7 @@ table {
 * {
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid gray;  /* LAYOUT ASSISTANCE BORDER */
+    /* border: 1px solid gray;  LAYOUT ASSISTANCE BORDER */
 }
 
 html {
@@ -62,7 +62,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 2rem;
     line-height: 2.5rem;
@@ -73,14 +73,83 @@ body {
 .pageContainer {
     width: 100%;
     margin: 0 auto;
-    margin-top: 3%;
+    /* margin-top: 2%; */
 }
 
 /* Logo Styling */
 
+.pageHeader {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.logo {
+    width: 30%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    margin: 4%;
+}
+
 /* Navigation Styling */
 
+nav.navigation {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation a {
+    width: 14%;
+    border: 2px solid #696969;
+    text-align: center;
+    text-decoration: none;
+    background-color: #B5B5B5;
+    color: whitesmoke;
+    font-weight: 400;
+    border-radius: 7px;
+    padding: 1%;
+    margin: .25%;
+    /* margin-right: 0; */
+}
+
 /* Main Image Styling */
+
+.mainImageContainer {
+    height: 80vh;
+    width: 100%;
+    background-image:url('https://picsum.photos/id/14/800/400?grayscale');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainImageContainer h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 9rem;
+    color: whitesmoke;
+    line-height: 5rem;
+    margin: 4%;
+}
+
+.mainImageContainer h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
+.pageHeadline {
+    width: 60%;  
+}
 
 /* Gallery Styling */
 
@@ -97,6 +166,7 @@ body {
 
 .galleryItem {
     width: 25%;
+    margin: 4%;
 }
 
 .galleryImage {
@@ -106,5 +176,17 @@ body {
 }
 
 .itemDescription {
+    text-align: center;
+}
+
+/* Footer Styling */
+
+footer {
+    height: 30vh;
+    width: 100%;
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
