@@ -90,25 +90,15 @@ body {
     margin: 4%;
 }
 
-@media (max-width: 1000px) {
-    .navigation a {
-        width: 15%;
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-    }
-}
+/* Logo Styling Under 800px */
 
 @media (max-width: 800px) {
     .logo {
-        font-size: 4rem;
-    }
-    .navigation a {
-        width: 15%;
-        font-size: 1.3rem;
-        font-weight: 300;
-        padding: .75%;
+        font-size: 3rem;
     }
 }
+
+/* Logo styling under 500px */
 
 @media (max-width: 500px) {
     .pageHeader {
@@ -122,37 +112,6 @@ body {
         width: 100%;
         text-align: center;
         /* justify-content: center; */
-    }
-
-    .pageHeader .navigation {
-        /* display: flex; */
-        width: 100%;
-        margin: 2% 0;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-    
-    .pageHeader .navigation a {
-        width: 40%;
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-        margin: .5%;
-    }
-
-    .mainTitle {
-        /* height: 5vh; */
-        background-image: url('https://picsum.photos/id/14/600/200?grayscale');
-    }
-
-    .mainImageContainer .pageHeadline {
-        /* display: inline-block; */
-        height: 10vh;
-        /*  */
-    }
-
-    main .galleryItem {
-        width: 40%;
     }
 }
 
@@ -194,6 +153,46 @@ body {
     border-radius: 7px;
     animation: navAnimation 500ms linear 0s 1 alternate;
     font-variant: small-caps;
+}
+
+/* Navigation Styles Under 1000px */
+@media (max-width: 1000px) {
+    .navigation a {
+        width: 15%;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Navigation styles under 800px */
+@media (max-width: 800px) {
+    .navigation a {
+        width: 15%;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+        padding: .75%;
+    }
+}
+
+/* Main navigation styling under 500px */
+
+@media (max-width: 500px) {
+    .pageHeader .navigation {
+        /* display: flex; */
+        width: 100%;
+        margin: 2% 0;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    .pageHeader .navigation a {
+        width: 40%;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin: .5%;
+    }
 }
 
 /* Main Image Styling */
@@ -242,6 +241,38 @@ body {
     
 }
 
+.pageHeadline h3 {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
+/* Main Image Styling Under 800px */
+
+@media (max-width: 800px) {
+    .mainImageContainer .pageHeadline h1 {
+        font-size: 5rem;
+    }
+
+    .mainImageContainer .pageHeadline h3 {
+        font-size: 3rem;
+    }
+    .mainTitle {
+        /* height: 5vh; */
+        /* background-image: url('https://picsum.photos/id/14/600/200?grayscale'); */
+    }
+
+    .mainImageContainer .pageHeadline {
+        /* display: inline-block; */
+        height: 10vh;
+    
+    }
+}
+
+/* Main Image Styling Under 500px */
+
 @media (max-width: 500px) {
     .mainImageContainer .pageHeadline h1 {
         font-size: 3.5rem;
@@ -250,14 +281,16 @@ body {
     .mainImageContainer .pageHeadline h3 {
         font-size: 2rem;
     }
-}
+    .mainTitle {
+        /* height: 5vh; */
+        background-image: url('https://picsum.photos/id/14/600/200?grayscale');
+    }
 
-.pageHeadline h3 {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 4rem;
-    color: whitesmoke;
+    .mainImageContainer .pageHeadline {
+        /* display: inline-block; */
+        height: 10vh;
+    
+    }
 }
 
 /* Gallery Styling */
@@ -289,6 +322,14 @@ body {
 .itemDescription {
     text-align: center;
     margin: 4%;
+}
+
+/* Gallery Styling Under 500px */
+
+@media (max-width: 500px) {
+    main .galleryItem {
+        width: 40%;
+    }
 }
 
 /* Footer Styling */
@@ -324,8 +365,23 @@ footer {
     color: #696969;
     font-weight: 400;
     border-radius: 7px;
-    padding: 1%;
+    padding: .75% 2%;
     margin: .25%;
+}
+
+/* Footer Styling Under 800px */
+
+@media (max-width: 800px) {
+    .footerContainer h3 {
+        font-size: 3rem;
+    }
+
+    .footerContainer a {
+        width: 40%;
+        /* font-size: 1.25rem; */
+        letter-spacing: 1px;
+        margin: .5%;
+    }
 }
 
 /* Footer Styling Under 500px */
