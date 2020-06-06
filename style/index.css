@@ -91,7 +91,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-    nav.navigation a {
+    .navigation a {
         width: 15%;
         font-size: 1.5rem;
         letter-spacing: 1px;
@@ -102,7 +102,7 @@ body {
     .logo {
         font-size: 4rem;
     }
-    nav.navigation a {
+    .navigation a {
         width: 15%;
         font-size: 1.3rem;
         font-weight: 300;
@@ -124,34 +124,44 @@ body {
         /* justify-content: center; */
     }
 
-    nav.navigation {
-        display: inline-block;
+    .pageHeader .navigation {
+        /* display: flex; */
         width: 100%;
         margin: 2% 0;
         flex-direction: column;
-        /* justify-content: center; */
+        justify-content: center;
 
     }
     
-    nav.navigation a {
-        width: 30%;
+    .pageHeader .navigation a {
+        width: 40%;
         font-size: 1.5rem;
         letter-spacing: 1px;
+        margin: .5%;
+    }
+
+    .mainImageContainer .pageHeadline {
+        /* display: inline-block; */
+        height: 10vh;
+    }
+
+    main .galleryItem {
+        width: 40%;
     }
 }
 
 /* Navigation Styling */
 
-nav.navigation {
+.navigation {
     width: 60%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex: 0 1 auto;
+    /* flex: 0 1 auto; */
 }
 
 .navigation a {
-    display: inline-block;
+    /* display: flex; */
     width: 22%;
     border: 2px solid #696969;
     text-align: center;
@@ -182,9 +192,14 @@ nav.navigation {
 
 /* Main Image Styling */
 
-.mainImageContainer {
+.mainTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.mainTitle {
     height: 80vh;
-    width: 100%;
+    width: 80%;
     background-image: url('https://picsum.photos/id/14/800/400?grayscale');
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,10 +209,12 @@ nav.navigation {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
 }
 
-.mainImageContainer h1 {
+.pageHeadline h1 {
     width: 100%;
+    height: 10vh;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 9rem;
@@ -208,12 +225,12 @@ nav.navigation {
 }
 
 @media (max-width: 500px) {
-    .mainImageContainer h1 {
+    .pageHeadline h1 {
         font-size: 4rem;
     }
 }
 
-.mainImageContainer h3 {
+.pageHeadline h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 4rem;
@@ -228,6 +245,9 @@ nav.navigation {
 
 .gallery {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .galleryRow {
