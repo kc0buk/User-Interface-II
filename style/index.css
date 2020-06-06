@@ -140,9 +140,15 @@ body {
         margin: .5%;
     }
 
+    .mainTitle {
+        /* height: 5vh; */
+        background-image: url('https://picsum.photos/id/14/600/200?grayscale');
+    }
+
     .mainImageContainer .pageHeadline {
         /* display: inline-block; */
         height: 10vh;
+        /*  */
     }
 
     main .galleryItem {
@@ -204,7 +210,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,33 +218,46 @@ body {
     margin: 0 auto;
 }
 
-.pageHeadline h1 {
+.mainImageContainer {
     width: 100%;
-    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageHeadline {
+    width: 100%;
+    /* margin: 4%; */
+}
+
+.mainTitle .pageHeadline h1 {
+    width: 100%;
+    /* height: 10vh; */
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 9rem;
     color: whitesmoke;
     line-height: 5rem;
-    margin: 4%;
+    margin-bottom: 3%;
     
 }
 
 @media (max-width: 500px) {
-    .pageHeadline h1 {
-        font-size: 4rem;
+    .mainImageContainer .pageHeadline h1 {
+        font-size: 3.5rem;
+    }
+
+    .mainImageContainer .pageHeadline h3 {
+        font-size: 2rem;
     }
 }
 
 .pageHeadline h3 {
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 4rem;
     color: whitesmoke;
-}
-
-.pageHeadline {
-    width: 60%;  
 }
 
 /* Gallery Styling */
@@ -285,7 +304,7 @@ footer {
 }
 
 .footerContainer {
-    width: 80%;
+    width: 100%;
 }
 
 .footerContainer h3 {
@@ -293,7 +312,7 @@ footer {
     font-weight: 400;
     font-size: 4rem;
     color: whitesmoke;
-    margin: 4%;
+    margin: 3%;
 }
 
 .footerContainer a {
@@ -307,4 +326,19 @@ footer {
     border-radius: 7px;
     padding: 1%;
     margin: .25%;
+}
+
+/* Footer Styling Under 500px */
+
+@media (max-width: 500px) {
+    .footerContainer h3 {
+        font-size: 2rem;
+    }
+
+    .footerContainer a {
+        width: 40%;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        margin: .5%;
+    }
 }
