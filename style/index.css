@@ -54,7 +54,7 @@ table {
 * {
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid gray;  /* LAYOUT ASSISTANCE BORDER */
+    /* border: 1px solid gray;  LAYOUT ASSISTANCE BORDER */
 }
 
 html {
@@ -122,7 +122,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* flex: 0 1 auto; */
+    margin-right: 1%;
 }
 
 .navigation a {
