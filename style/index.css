@@ -1,1 +1,400 @@
-/* Add CSS styling here */
+/* Import Fonts From Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Open+Sans:300,400');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	/* font-size: 100%; */
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid gray;  LAYOUT ASSISTANCE BORDER */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+/* Page Container */
+
+.pageContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+
+.pageHeader {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 40%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    margin: 4%;
+}
+
+/* Logo Styling Under 800px */
+
+@media (max-width: 800px) {
+    .logo {
+        font-size: 3rem;
+    }
+}
+
+/* Logo styling under 500px */
+
+@media (max-width: 500px) {
+    .pageHeader {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .logo {
+        margin: 4% 0;
+        width: 100%;
+        text-align: center;
+        /* justify-content: center; */
+    }
+}
+
+/* Navigation Styling */
+
+.navigation {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.navigation a {
+    /* display: flex; */
+    width: 22%;
+    border: 2px solid #696969;
+    text-align: center;
+    text-decoration: none;
+    background-color: #B5B5B5;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    border-radius: 7px;
+    padding: 1.5%;
+    margin: .25%;
+}
+
+@keyframes navAnimation {
+    from {background-color: #B5B5B5;}
+    to {background-color: #696969;}
+  }
+
+.navigation a:hover {
+    color: white;
+    background-color: #696969;
+    border: 2px solid #B5B5B5;
+    border-radius: 7px;
+    animation: navAnimation 500ms linear 0s 1 alternate;
+    font-variant: small-caps;
+}
+
+/* Navigation Styles Under 1000px */
+@media (max-width: 1000px) {
+    .navigation a {
+        width: 15%;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Navigation styles under 800px */
+@media (max-width: 800px) {
+    .navigation a {
+        width: 15%;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+        padding: .75%;
+    }
+}
+
+/* Main navigation styling under 500px */
+
+@media (max-width: 500px) {
+    .pageHeader .navigation {
+        /* display: flex; */
+        width: 100%;
+        margin: 2% 0;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    .pageHeader .navigation a {
+        width: 40%;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin: .5%;
+    }
+}
+
+/* Main Image Styling */
+
+.mainTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.mainTitle {
+    height: 80vh;
+    width: 80%;
+    background-image: url('https://picsum.photos/id/14/800/400?grayscale');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mainImageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageHeadline {
+    width: 100%;
+    /* margin: 4%; */
+}
+
+.mainTitle .pageHeadline h1 {
+    width: 100%;
+    /* height: 10vh; */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 9rem;
+    color: whitesmoke;
+    line-height: 5rem;
+    margin-bottom: 3%;
+    
+}
+
+.pageHeadline h3 {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
+/* Main Image Styling Under 800px */
+
+@media (max-width: 800px) {
+    .mainImageContainer .pageHeadline h1 {
+        font-size: 5rem;
+    }
+
+    .mainImageContainer .pageHeadline h3 {
+        font-size: 3rem;
+    }
+    .mainTitle {
+        /* height: 5vh; */
+        /* background-image: url('https://picsum.photos/id/14/600/200?grayscale'); */
+    }
+
+    .mainImageContainer .pageHeadline {
+        /* display: inline-block; */
+        height: 10vh;
+    
+    }
+}
+
+/* Main Image Styling Under 500px */
+
+@media (max-width: 500px) {
+    .mainImageContainer .pageHeadline h1 {
+        font-size: 3.5rem;
+    }
+
+    .mainImageContainer .pageHeadline h3 {
+        font-size: 2rem;
+    }
+    .mainTitle {
+        /* height: 5vh; */
+        background-image: url('https://picsum.photos/id/14/600/200?grayscale');
+    }
+
+    .mainImageContainer .pageHeadline {
+        /* display: inline-block; */
+        height: 10vh;
+    
+    }
+}
+
+/* Gallery Styling */
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galleryRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.galleryItem {
+    width: 25%;
+    margin: 4%;
+}
+
+.galleryImage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.itemDescription {
+    text-align: center;
+    margin: 4%;
+}
+
+/* Gallery Styling Under 500px */
+
+@media (max-width: 500px) {
+    main .galleryItem {
+        width: 40%;
+    }
+}
+
+/* Footer Styling */
+
+footer {
+    height: 30vh;
+    width: 100%;
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footerContainer {
+    width: 100%;
+}
+
+.footerContainer h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: whitesmoke;
+    margin: 3%;
+}
+
+.footerContainer a {
+    width: 20%;
+    border: 2px solid #B5B5B5;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #696969;
+    font-weight: 400;
+    border-radius: 7px;
+    padding: .75% 2%;
+    margin: .25%;
+}
+
+/* Footer Styling Under 800px */
+
+@media (max-width: 800px) {
+    .footerContainer h3 {
+        font-size: 3rem;
+    }
+
+    .footerContainer a {
+        width: 40%;
+        /* font-size: 1.25rem; */
+        letter-spacing: 1px;
+        margin: .5%;
+    }
+}
+
+/* Footer Styling Under 500px */
+
+@media (max-width: 500px) {
+    .footerContainer h3 {
+        font-size: 2rem;
+    }
+
+    .footerContainer a {
+        width: 40%;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        margin: .5%;
+    }
+}
